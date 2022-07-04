@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock,Paper&Scissors</title>
+<script>
+
+function userChoice() {
+    let random = ["rock", "paper", "scissors"];
+    return random[Math.floor(Math.random() * 3)];
+}
+function computerChoice() {
+    let random = ["rock", "paper", "scissors"];
+    return random[Math.floor(Math.random() * 3)];
+}
+
+function playRound(userChoice, computerChoice){
+    if (userChoice === "rock") {
+        if (computerChoice === "rock") {
+            return "Draw!";
+        } else if (computerChoice === "paper") {
+            return "Computer Wins!";
+        } else {
+            return "User wins!";
+        }
+    } else if (userChoice === "paper") {
+        if (computerChoice === "rock") {
+            return "User wins!";
+        } else if (computerChoice === "paper") {
+            return "Draw!";
+        } else {
+            return "Computer wins!";
+        }
+    } else  {
+        if (computerChoice === "rock") {
+            return "Computer wins!"
+        } else if (computerChoice === "paper") {
+            return "User wins!";
+        } else {
+            return "Draw!"; 
+        }
+    }
+}
+
+var userSelection = userChoice();
+var computerSelection = computerChoice();
+var result = playRound(userSelection, computerSelection);
+console.log("user's choice: ", userSelection);
+console.log("computer's choice: ", computerSelection);
+console.log("result is: ", result);
+</script>
+</head>
+<body>
+    
+</body>
+</html>
