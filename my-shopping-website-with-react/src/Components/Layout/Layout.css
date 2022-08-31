@@ -1,0 +1,34 @@
+header a {
+    font-weight: 400;
+    color: blueviolet;
+    text-decoration: inherit;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+    background-color: rgb(120, 125, 129);
+    width: 100%;
+}
+
+header h1 {
+    font-size: larger;
+    display: flex;
+    color: black;
+}
+
+header nav {
+    width: 100%;
+}
+
+header ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+header ul li {
+    margin-right: 10px;
+    font-size: 20px;
+}
